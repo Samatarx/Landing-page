@@ -76,6 +76,7 @@ header {
 header .text {
   position: relative;
   max-width: 275px;
+  text-align: center;
 }
 
 header .text span {
