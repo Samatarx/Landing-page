@@ -75,13 +75,14 @@ header {
 
 header .text {
   position: relative;
-  max-width: 250px;
+  max-width: 275px;
 }
 
 header .text span {
   color: rgb(255, 174, 24);
-  font-size: 4rem;
+  font-size: 3rem;
   letter-spacing: 0.3rem;
+  text-align: center;
 }
 
 header .text p {
