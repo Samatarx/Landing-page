@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  font-size: 2rem;
+ 
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #f12321;
+}
+
+nav i {
+  color: white;
+}
+
+#dropdown {
+  visibility: hidden;
+  transition:  0.3s ease;
+}
+
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 0px;
+}
+
+header .text {
+  position: relative;
+  max-width: 250px;
+}
+
+header .text span {
+  color: rgb(255, 174, 24);
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+header .text p {
+  font-size: 1rem;
+  margin: 10px;
+  text-align: center;
+}
+
+header .text button {
+  background-color: orange;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  margin: 2rem 1rem;
+  color: white;
+  letter-spacing: 0.5rem;
+ text-align: center;
+ margin: 1.5rem 2rem;
+}
+
+header .text button:hover {
+  color: orange;
+  background-color:black;
+}
+
+header .image {
+  display: flex;
+  justify-content: flex-end;
+  height: 350px;
+  padding-right: 50px;
+
+}
+
+@media (max-width:700px){
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 100vw;
+    padding: 1rem;
+    margin: 0;  
+  }
+
+  .drop {
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    text-align: center;
+  }
+
+  #dropdown {
+    visibility: visible;
+    position: absolute;
+    left: 90%;
+    font-size: larger;
+  }
+
+  header {
+    max-width: 100vw;
+    position: relative;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0px ;
+    margin-top: 4rem;
+    z-index: 10;
+    font-size: 0.1rem;
+  }
+
+  header img {
+    display: flex;
+    width: auto;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 50px;
+  }
+}
